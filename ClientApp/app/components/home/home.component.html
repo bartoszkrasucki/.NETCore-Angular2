@@ -1,0 +1,42 @@
+<h2>Welcome!</h2>
+<p>Welcome to Principis Capitol interview project.</p>
+<p>Since during in person interview I have outlined solution using Angular 1.6 and ASP.MVC, I have decided to create project using .Net Core and Angular 2 Single Page Application. <br />Enjoy!</p>
+<br />
+<h5>Project description and features</h5>
+<ul>
+    <li>This is a .Net Core Angular 2 Single Page Application project.</li>
+    <li>Project have been created using yeoman scaffolding tool to get project and later modified to specifications.</li>    
+</ul>
+<h5>Project overview</h5>
+<ul>
+    <li>One left side you can find link to Word reverser page where user cam enter any string. After submit user will see result in form of the same string but in reverse order.</li>        
+</ul>
+
+<h5>Project features</h5>
+<ul>
+    <li>Project have been created using Visual Studio 2017.</li>
+    <li><code>PrincipisCapital.Platform.Web</code> project contains front-end and back-end code.</li>
+    <li><code>PrincipisCapital.Platfrom.Test</code> contains small one test to demonstrate .Net unit test.</li>
+    <li>Project also contains two small unit test to test front-end. This is done using Karma and Jasmine.</li>
+</ul>
+
+
+<h5>Execution steps</h5>
+<ul>
+    <li>To start <code>PrincipisCapital.Platform.Web</code> you can either open solution in Visual Studio 2017 and hit F5 or open command line navigate to folder where <code>PrincipisCapital.Platform.Web</code> is and type <code>dotnet run</code> and hit enter.</li>
+    <li>To execute test from  <code>PrincipisCapital.Platform.Tets</code> please got to Test in VS menu and click to run all tests.</li>
+    <li>
+        To execute Karma test please open command line, navigate to folder where <code>PrincipisCapital.Platform.Web</code> is and type <code>karma start ClientApp\test\karma.conf.js</code> and hit enter.<br />
+        NOTE: You might need to install couple tools for this to run successfully. Please see below for details. 
+    </li>    
+</ul>
+
+<h5>Installing Karma and Jasmine</h5>
+<ol>
+    <li><code>npm install jasmine-core</code>
+    <li><code>npm install karma karma-jasmine karma-chrome-launcher --save-dev</code></li>
+    <li><code>npm install -g karma-cli</code></li>
+    <li>Now you should be ready to run tests: <code>karma start ClientApp\test\karma.conf.js</code></li>
+</ol>
+
+If there are still issues please try fist install all npm packages by running <code>npm install</code> in CMD from root of <code>PrincipisCapital.Platform.Web</code> project.

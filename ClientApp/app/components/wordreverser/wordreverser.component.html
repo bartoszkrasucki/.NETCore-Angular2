@@ -1,0 +1,15 @@
+<h4>Please enter below any word and click submit.</h4>
+
+
+
+<form class="form-inline" [formGroup]="wordReverserForm" (ngSubmit)="submitWordToBeReversed($event)">
+    <div class="form-group">
+        <input formControlName="WordSubmitted" placeholder="Enter any word" required>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+<h3 *ngIf="response?.isSuccess">Result: <strong>{{response?.result}}</strong></h3>
+
+<h3 *ngIf="response?.isSuccess == false">Error: {{response?.errorMessage}}</h3>
+
+
